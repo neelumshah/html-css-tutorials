@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .container {
+        height: 745px;
+        border: 2px solid brown;
+        display: flex;
+        /* properties for flex container  */
+
+        /* flex-direction: row; by default direction is row */
+        /* flex-direction: column; */
+        /* flex-direction: column-reverse; */
+        /* flex-direction: row-reverse; */
+        /* flex-wrap: wrap; */
+        /* used to set the property of flex direction and flex wrap  */
+        /* flex-flow: row-reverse wrap;   */
+
+        /* justify the contennt in horizontal way  */
+        /* justify-content: center; */
+        /* justify-content: baseline; */
+        /* justify-content: end; */
+        /* justify-content: flex-end;    start sy */
+        /* justify-content: flex-start;  end sy */
+        /* justify-content: space-between;   box k darmiyan sy equall spacce krdo */
+        /* justify-content: space-around; kisi bh ak box ki 4ro sides sy barabar sapce krdo */
+        /* justify-content:space-evenly; */
+
+        /* justify the content vertically */
+        /* /* align-items: center; */
+        /* align-items:flex-end; */
+        /* align-items: flex-start; */
+        /* align-items: stretch;  */
+
+    }
+
+    .items {
+        background-color: brown;
+        border: 2 px solid green;
+        padding: 15px;
+        margin: 6%;
+        width: 119px;
+        height: 100px;
+    }
+
+    #item1{
+        /* flex properties for items */
+        /* higher the order, will display later in container; */
+        /* order: 2; */
+
+        /* flex-grow: 5;  will grow thw box  */
+        /* will shrink the box  */
+        flex-shrink: 3;  
+
+
+
+    }
+
+    #item2 {
+        /* FlexBASIS */
+        /* when flex direction  is set to row then flex basis will control the width */
+        /* when flex direction  is set to column then flex basis will control the height */
+        flex-basis: 340px;
+        /* align-self: flex-end;  will ove the box in end  */
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="items" id="item1">One</div>
+        <div class="items" id="item2">Two</div>
+        <div class="items" id="item3">Three</div>
+        <div class="items" id="item4">Four</div>
+    </div>
+
+
+</body>
+
+</html>

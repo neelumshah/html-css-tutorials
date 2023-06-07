@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navigation</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .navbar {
+            background-color: rgb(7, 6, 6);
+            border-radius: 30px;
+        }
+
+        .navbar ul {
+            overflow: auto;
+        }
+
+        .navbar li {
+            float: left;
+            list-style: none;
+            /*to remove bullets*/
+            margin: 13px 20px;
+
+        }
+
+        .navbar li a {
+
+            text-decoration: none;
+            padding: 13px 13px;
+            color: white;
+       
+
+        }
+
+        .search {
+            float: right;
+            color: white;
+            padding: 10px 75px;
+
+        }
+
+        .navbar input {
+            border: 2px solid black;
+            border-radius: 20px;
+            padding: 5px;
+        }
+
+        header {
+            border: 4px solid pink;
+
+            margin: auto;
+
+        }
+
+        img {
+            width: 30px;
+            display: block;
+            /*image ki display inline hoti ha*/
+            margin: auto;
+
+        }
+
+        h3 {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0px;
+            text-align: center;
+
+        }
+
+        .box {
+            padding: 33px;
+            margin: auto;
+            border: 6px solid black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            display: inline-block;
+            width: 560px;
+            box-sizing: border-box;
+            /*issy apki width wohi rehti ha jo apny di hoti ha agr na lagao to padding apny hisab sy set krta ha widht ho */
+            background-color: bisque;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="top">
+        <img src="https://fiverr-res.cloudinary.com/t_profile_thumb,q_auto,f_auto/attachments/profile/photo/42d3304882ea12857234bb208b1641a2-971841541622034225387/JPEG_20210526_180344_7069325683576563940.jpg"
+            alt="">
+        <h3>Welcome to Neelum's Blog</h3>
+
+    </header>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">about</a></li>
+            <li><a href="#">gallery</a></li>
+            <li><a href="#">contact us</a></li>
+            <div class="search">
+                <input type="search" name="search" id="search1" placeholder="Search form this website">
+
+            </div>
+        </ul>
+    </nav>
+    <div class="container" id="1"> 
+        <!--"div.box#box*4" emmet ha jis sy 4 block ak sath aa skty hn -->
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis pariatur accusamus quibusdam labore
+                veritatis corporis cupiditate beatae. Maxime, autem, odit repellendus, ullam expedita quia nobis
+                asperiores harum sapiente quas exercitationem dolorum temporibus modi. Sit facilis dolor hic, error
+                provident molestias nesciunt maxime eligendi architecto.</p>
+        </div>
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis pariatur accusamus quibusdam labore
+                veritatis corporis cupiditate beatae. Maxime, autem, odit repellendus, ullam expedita quia nobis
+                asperiores harum sapiente quas exercitationem dolorum temporibus modi. Sit facilis dolor hic, error
+                provident molestias nesciunt maxime eligendi architecto.</p>
+        </div>
+        <div class="box">
+            <h3>heading</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis pariatur accusamus quibusdam labore
+                veritatis corporis cupiditate beatae. Maxime, autem, odit repellendus, ullam expedita quia nobis
+                asperiores harum sapiente quas exercitationem dolorum temporibus modi. Sit facilis dolor hic, error
+                provident molestias nesciunt maxime eligendi architecto.</p>
+        </div>
+
+    </div>
+  
+
+</body>
+
+</html>

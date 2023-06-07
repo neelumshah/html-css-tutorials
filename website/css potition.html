@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS position</title>
+<!-- css position static(by default), relative, absolute, fixed ,sticky -->
+<style>
+    .container{
+        background-color: aqua;
+        border: 6px solid rgb(23, 19, 248);
+        height:  12000px;
+    }
+
+    .box{
+        border: 4px solid red;
+        margin: 2px;
+        height: 220px;
+        width: 220px;
+        display:inline-block;
+    }
+    /* relative position in css means 
+    can move according to its normal postion like left,right top bottom
+    or realative to its normal position */
+    #box1{
+        position: relative;
+        top: 10px;
+        left: 10px;
+        bottom: 10px;
+        right: 0px;
+        /* we use this only and only if we want a gap in preivious position of any div or any thing in css */
+    }
+
+    #box2{
+        position: absolute;
+        /* related to its first parent ... will move according to its parent positon */
+        left: 34px;
+        top: 130px;
+        right:  34px;
+    }
+    #box3{
+        position: fixed;
+        right: 134px;
+        /* box apni jagha py fixed rhy sroll dwn bh krein tb bhi box Apni jagha py fix rhy  */
+    }
+#box4{
+    position: sticky;
+    top: 12px;
+    
+
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">1</div>
+        <div class="box" id="box2">2</div>
+        <div class="box" id="box3">3</div>
+        <div class="box" id="box4">4</div>
+    </div>
+    
+</body>
+</html>
